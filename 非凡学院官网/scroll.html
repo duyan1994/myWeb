@@ -1,0 +1,43 @@
+﻿<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title></title>
+		<style type="text/css">
+			.aside-scroll{
+				position: absolute;
+				left: 10px;
+				z-index: 999;
+				top: 0px;
+			}
+			
+			
+		</style>
+	</head>
+	<body>
+		
+		<div class="aside-scroll">
+			<img src="img/aside.png">
+		</div>
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				
+				var H = $(window).height();
+//				console.log(H)
+				var asideH = $(".aside-scroll").height();
+				var scrollTop = $(document).scrollTop();
+				$(".aside-scroll").css("top",(H-asideH)/2+scrollTop+"px");
+				
+				
+				$(document).scroll(function(){
+					H = $(window).height();
+					scrollTop = $(document).scrollTop();
+					$(".aside-scroll").stop().animate({"top":(H-asideH)/2+scrollTop+"px"},800);
+				});
+				
+			});
+			
+			
+		</script>
+	</body>
+</html>

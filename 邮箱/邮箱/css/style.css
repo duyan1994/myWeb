@@ -1,0 +1,1455 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.w{
+	width: 1000px;
+	margin: 0 auto ;
+	/*background-color: gainsboro;*/
+}
+
+body{
+	font-size: 12px;
+	color: #333333;
+	line-height: 1.5em;
+	font-family: "微软雅黑";
+}
+a{
+	text-decoration: none;
+	color: #333;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}
+.clear{
+	display: block;
+	content: "";
+	clear: both;
+}
+
+
+.introduce-nav{
+	min-width: 1200px;
+	height: 94px;
+	border-bottom: 1px solid #e0e0e0;
+	line-height: 94px;
+	font-size: 18px;
+	/*background-color: red;*/
+}
+.introduce-nav ul{
+	width: inherit;
+	height: inherit;
+	margin-left: 159px;
+}
+.introduce-nav ul li{
+	width: 160px;
+	height: inherit;
+	list-style: none;
+	float: left;
+	margin-left: 69px;
+	position: relative;
+	border-bottom: 3px solid white;
+	box-sizing: border-box;
+	/*background-color: gray;*/
+}
+.introduce-nav ul li a{
+	width: inherit;
+	height: inherit;
+	display: inline-block;
+}
+.introduce-nav ul li span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 38px;
+	left: 22px;
+	background-image:url(../img/nav.png) ;
+}
+.introduce-nav ul li span.bg-img-1{
+	background-position: 0px 0px;
+	/*display: block;*/
+}
+.introduce-nav ul li span.bg-img-2{
+	background-position: 0px -40px;
+}
+.introduce-nav ul li span.bg-img-3{
+	background-position: 0px -80px;
+}
+.introduce-nav ul li span.bg-img-4{
+	background-position: 0px -120px;
+}
+/*点击的hover效果*/
+.introduce-nav ul li span.hover-bg-img-1{
+	background-position: 0px -160px;
+	/*display: none;*/
+}
+.introduce-nav ul li span.hover-bg-img-2{
+	background-position: 0px -200px;
+	/*display: none;*/
+}
+.introduce-nav ul li span.hover-bg-img-3{
+	background-position: 0px -240px;
+	/*display: none;*/
+}
+.introduce-nav ul li span.hover-bg-img-4{
+	background-position: 0px -280px;
+	/*display: none;*/
+}
+
+
+.introduce-nav ul li div{
+	width: 94px;
+	height: 94px;
+	display: inline-block;
+	border-right-color: yellowgreen;
+	position: absolute;
+	right: 0px;
+}
+/*产品优势页*/
+/*advantage-wechat*/
+.advantage-wechat{
+	width:1048px ;
+	height: 520px;
+	margin: 0px auto;
+	/*background-color: gainsboro;*/
+}
+.advantage-wechat .wechat-text{
+	width:526px ;
+	height: 250px;
+	padding-left: 36px;
+	box-sizing:content-box;
+	/*background-color: palegreen;*/
+	padding-top: 105px;
+	/*display: inline-block;*/
+}
+.advantage-wechat .wechat-text .wechat-title{
+	width: 490px;
+	height: 95px;
+	line-height: 95px;
+	font-size: 30px;
+	border-bottom: 1px solid #C3C3C3;
+	box-sizing: border-box;
+	color: #000;
+	font-weight: lighter;
+}
+.advantage-wechat .wechat-text .wechat-sub{
+	width: 490px;
+	height: 34px;
+	margin-top: 40px;
+}
+.advantage-wechat .wechat-text .wechat-sub .wechat-logo-pic{
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+    background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+}
+.advantage-wechat .wechat-text .wechat-sub .sub1{
+	background-position: 0px -1753px;
+}
+.advantage-wechat .wechat-text .wechat-sub .sub2{
+	background-position: 0px -1665px;
+}
+.advantage-wechat .wechat-text .wechat-sub .wecaht-logo-text{
+	line-height: 34px;
+	font-size: 20px;
+	color: #666;
+}
+/*右侧logo*/
+.advantage-wechat .wechat-logo{
+	/*display: inline-block;*/
+	width: 374px;
+	height: 450px;
+	margin-top: 40px;
+	/*background-color: palevioletred;*/
+	position: relative;
+}
+.advantage-wechat .wechat-logo .logo1{
+	width: 374px;
+	height: 411px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -3898px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.advantage-wechat .wechat-logo .group{
+	width: 262px;
+	height: 367px;
+	/*position: absolute;
+	top: 75px;
+	left: 24px;*/
+	margin-top: 75px;
+	margin-left: 24px;
+	position: relative;
+	overflow: hidden;
+}
+/*微信*/
+.advantage-wechat .wechat-logo .group ul{
+	width: 786px;
+	height: inherit;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+.advantage-wechat .wechat-logo .group ul li{
+	list-style: none;
+	float: left;
+}
+.advantage-wechat .wechat-logo .group .logo1-1{
+	width: 262px;
+	height: 367px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -6075px;
+    /*z-index: 3;*/
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+}
+/*腾讯企业邮*/
+.advantage-wechat .wechat-logo .group .logo1-2{
+	width: 262px;
+	height: 367px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -573px;
+    /*z-index: 3;*/
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+}
+/*腾讯企业邮-刘伟*/
+.advantage-wechat .wechat-logo .group .logo1-3{
+	width: 262px;
+	height: 367px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -196px;
+    /*z-index: 3;*/
+    /*position: absolute;
+    top: 0px;
+    left: 0px;*/
+}
+
+/*advantage-email整合*/
+.advantage-email{
+	width: 1048px;
+	height:520px;
+	margin: 0px auto;
+	/*background-color: palegreen;*/
+}
+.advantage-email .email-logo{
+	width: 424px;
+	height: inherit;
+	/*background-color: pink;*/
+	/*padding-top: 35px;*/
+	padding-left: 36px;
+	padding-top: 35px;
+	box-sizing: border-box;
+	position: relative;
+}
+.advantage-email .email-logo .logo2{
+	width: 308px;
+	height: 411px;
+	/*background-color: yellowgreen;*/
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -3898px;
+    overflow: hidden;
+}
+.advantage-email .email-logo .logo2-1{
+	width: 262px;
+	height: 335px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -2346px;
+    position: absolute;
+    top: 110px;
+    left: 60px;
+}
+.advantage-email .email-logo .logo2-2{
+	width: 262px;
+	height: 335px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -3200px;
+    position: absolute;
+    top: 155px;
+    left: 70px;
+}
+.advantage-email .email-logo .logo2-3{
+	width: 262px;
+	height: 335px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -2696px;
+    position: absolute;
+    top: 110px;
+    left: 350px;
+    opacity: 0;
+     -webkit-animation: move 4s infinite;
+}
+@-webkit-keyframes move{
+	0%{
+		left: 350px;
+		opacity: 0;
+	}
+	80%{
+		left: 350px;
+		opacity: 0;
+	}
+	90%{
+		opacity: 0.4;
+	}
+	100%{
+		left: 70px;
+		opacity: 1;
+	}
+}
+.advantage-email .email-logo .mask{
+	width: 262px;
+	height: 120px;
+	position: absolute;
+	bottom: 40px;
+	left: 70px;
+	background: linear-gradient(to top,rgba(255,255,255,1),rgba(255,255,255,0));
+}
+.advantage-email .email-logo .mouse1{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    left: 250px;
+     /*background-color: #2A8AE2;*/
+    -webkit-animation: mouse 3s infinite;
+    /*-webkit-animation-play-state: paused;*/
+}
+
+@-webkit-keyframes mouse{
+	0%{
+		bottom: 30px;
+        left: 250px;
+        opacity: 0;
+        background-color: #2A8AE2;
+	}
+	70%{
+		bottom: 30px;
+        left: 250px;
+        opacity: 0;
+        background-color: #2A8AE2;
+	}
+	100%{
+		bottom: 130px;
+        left: 250px;
+        /*opacity: 1;*/
+        border:5px solid #2A8AE2;
+	}
+}
+/*右侧内容*/
+.advantage-email .email-text{
+	width: 510px;
+	height: 244px;
+	padding-top: 138px;
+	box-sizing: content-box;
+	/*background-color: yellow;*/
+}
+.advantage-email .email-text .email-title{
+	width: 510px;
+	height: 60px;
+	font-size: 30px;
+	border-bottom: 1px solid #C3C3C3;
+	box-sizing: border-box;
+	color: #000;
+	font-weight: lighter;
+}
+.advantage-email .email-text .email-sub{
+	width: 510px;
+	height: 34px;
+	margin-top: 40px;
+}
+.advantage-email .email-text .email-sub .email-logo-pic{
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+    background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+}
+.advantage-email .email-text .email-sub .sub1{
+	background-position: 0px -1797px;
+}
+.advantage-email .email-text .email-sub .sub2{
+	background-position: 0px -1577px;
+}
+.advantage-email .email-text .email-sub .email-logo-text{
+	line-height: 34px;
+	font-size: 20px;
+	color: #666;
+}
+
+/*专业profession*/
+.advantage-profession{
+	width:1048px ;
+	height: 520px;
+	margin: 0px auto;
+	/*background-color: gainsboro;*/
+}
+.advantage-profession .profession-text{
+	width:490px ;
+	height: 255px;
+	box-sizing:content-box;
+	/*background-color: lightskyblue;*/
+	padding-top: 132.5px;
+}
+.advantage-profession .profession-text .profession-title{
+	width: 490px;
+	height: 60px;
+	line-height: 30px;
+	font-size: 30px;
+	border-bottom: 1px solid #C3C3C3;
+	color: #000;
+	font-weight: lighter;
+}
+.advantage-profession .profession-text .profession-sub{
+	width: 490px;
+	height: 34px;
+	margin-top: 40px;
+}
+.advantage-profession .profession-text .profession-sub .profession-logo-pic{
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+    background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+}
+.advantage-profession .profession-text .profession-sub .sub1{
+	background-position: 0px -1709px;
+}
+.advantage-profession .profession-text .profession-sub .sub2{
+	background-position: 0px -1489px;
+}
+.advantage-profession .profession-text .profession-sub .profession-logo-text{
+	line-height: 34px;
+	font-size: 20px;
+	color: #666;
+}
+.advantage-profession .profession-logo{
+	width: 500px;
+	height: 450px;
+	/*background-color: red;*/
+	position: relative;
+}
+.advantage-profession .profession-logo .logo3{
+	width: 220px;
+	height: 299px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 45px;
+	left: 140px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -4684px;
+}
+.advantage-profession .profession-logo .logo3-1{
+	width: 100px;
+	height: 100px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 85px;
+	left: 40px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -4319px;
+    -webkit-animation: logo3-1-left 2s ease-in infinite,logo3-1-top 2s ease-in infinite;
+}
+@-webkit-keyframes logo3-1-left{
+	0%{left: 20px;}
+	54%{left: 20px;}
+	55%{left: 10px;}
+	70%{left: 15px;}
+	85%{left: 25px;}
+	100%{left: 40px;}
+}
+@-webkit-keyframes logo3-1-top{
+	0%{top: 200px;}
+	54%{top: 200px;}
+	55%{top: 170px;}
+	70%{top: 130px;}
+	85%{top: 100px;}
+	100%{top: 85px;}
+}
+.advantage-profession .profession-logo .logo3-2{
+	width: 76px;
+	height: 76px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 158px;
+	right: 48px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    -webkit-animation: logo3-2-right 2s ease-in infinite,logo3-2-top 2s ease-in infinite;
+}
+@-webkit-keyframes logo3-2-right{
+	0%{right: 90px;}
+	54%{right: 90px;}
+	55%{right: 78px;} 
+	70%{right: 68px;} 
+	85%{right: 56px;} 
+	100%{right: 48px;} 
+	
+	/*0%{right: 90px;}
+	25%{right: 78px;}
+	50%{right: 68px;}
+	75%{right: 56px;}
+	100%{right: 48px;}*/
+}
+@-webkit-keyframes logo3-2-top{
+	0%{top: 80px;}
+	54%{top: 80px;}
+	55%{top: 90px;}
+	70%{top: 110px;}
+	85%{top: 130px;}
+	100%{top: 158px;}
+}
+.advantage-profession .profession-logo .logo3-3{
+	width: 69px;
+	height: 69px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	bottom: 60px;
+	left: 90px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -1339px;
+    -webkit-animation: logo3-3-left 2s ease-in infinite,logo3-3-bottom 2s ease-in infinite;
+}
+@-webkit-keyframes logo3-3-left{
+	0%{left: 160px;}
+	54%{left: 160px;}
+	55%{left: 142.5px;}
+	70%{left: 120px;}
+	85%{left: 107.5px;}
+	100%{left: 90px;}
+}
+@-webkit-keyframes logo3-3-bottom{
+	0%{bottom: 20px;}
+	54%{bottom: 20px;}
+	55%{bottom: 25px;}
+	70%{bottom: 35px;}
+	85%{bottom: 45px;}
+	100%{bottom: 60px;}
+}
+/*security安全*/
+.advantage-security{
+	width:1048px ;
+	height: 520px;
+	margin: 0px auto;
+	/*background-color: yellow;*/
+}
+.advantage-security .security-logo{
+	width: 500px;
+	height: 450px;
+	/*background-color: red;*/
+	position: relative;
+}
+.advantage-security .security-logo .logo4{
+	width: 234px;
+	height: 309px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 65px;
+	left: 133px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -4993px;
+    /*z-index: 1;*/
+}
+.advantage-security .security-logo .logo4-1{
+	width: 373px;
+	height: 142px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 153px;
+	left: 72px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -5312px;
+    /*z-index: 1;*/
+}
+.advantage-security .security-logo .logo4-2{
+	width: 51px;
+	height: 52px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 185px;
+	left: 65px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -1841px;
+    -webkit-animation:logo4-2-top 3s ease-in-out infinite,logo4-2-left 3s ease-in-out infinite;
+}
+@-webkit-keyframes logo4-2-left{
+	0%{left: 80px;}
+	50%{left: 80px;}
+	/*50%{left: 360px;}*/
+	100%{left: 65px;}
+}
+@-webkit-keyframes logo4-2-top{
+	0%{top: 230px;}
+	50%{top: 230px;}
+	/*50%{top: 200px;}*/
+	100%{top: 185px;}
+}
+.advantage-security .security-logo .logo4-3{
+	width: 76px;
+	height: 77px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 220px;
+	left: 327px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -5464px;
+    -webkit-animation:logo4-3-top 3s ease-in-out infinite,logo4-3-left 3s ease-in-out infinite;
+}
+@-webkit-keyframes logo4-3-left{
+	0%{left: 408px;}
+	50%{left: 408px;}
+	/*50%{left: 360px;}*/
+	100%{left: 327px;}
+}
+@-webkit-keyframes logo4-3-top{
+	0%{top: 180px;}
+	50%{top: 180px;}
+	/*50%{top: 200px;}*/
+	100%{top: 220px;}
+}
+.advantage-security .security-logo .logo4-4{
+	width: 62px;
+	height: 61px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 130px;
+	left: 378px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -1418px;
+    -webkit-animation:logo4-4-top 3s ease-in-out infinite,logo4-4-left 3s ease-in-out infinite,logo4-4-z 3s ease-in-out infinite;
+}
+@-webkit-keyframes logo4-4-left{
+	0%{left: 303px;}
+	50%{left: 303px;}
+	/*50%{left: 360px;}*/
+	100%{left: 378px;}
+}
+@-webkit-keyframes logo4-4-top{
+	0%{top: 88px;}
+	50%{top: 88px;}
+	/*50%{top: 200px;}*/
+	100%{top: 130px;}
+}
+@-webkit-keyframes logo4-4-z{
+	0%{z-index: -1;}
+	50%{z-index: -1;}
+	75%{z-index: -1;}
+	100%{z-index: 1;}
+}
+.advantage-security .security-logo .logo4-4-1{
+	width: 62px;
+	height: 61px;
+	/*background-color: palegreen;*/
+	position: absolute;
+	top: 85px;
+	left: 318px;
+	background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+    background-position: 0px -1418px;
+}
+.advantage-security .security-text{
+	width:510px ;
+	height: 255px;
+	box-sizing:content-box;
+	/*background-color: lightskyblue;*/
+	padding-top: 132.5px;
+}
+.advantage-security .security-text .security-title{
+	width: 510px;
+	height: 60px;
+	line-height: 30px;
+	font-size: 30px;
+	border-bottom: 1px solid #C3C3C3;
+	color: #000;
+	font-weight: lighter;
+}
+.advantage-security .security-text .security-sub{
+	width: 510px;
+	height: 34px;
+	margin-top: 40px;
+}
+.advantage-security .security-text .security-sub .security-logo-pic{
+	width: 34px;
+	height: 34px;
+	margin-right: 10px;
+    background-image: url(../img/advantage_logo.png);	
+    background-repeat: no-repeat;
+}
+.advantage-security .security-text .security-sub .sub1{
+	background-position: 0px -1621px;
+}
+.advantage-security .security-text .security-sub .sub2{
+	background-position: 0px -1533px;
+}
+.advantage-security .security-text .security-sub .security-logo-text{
+	line-height: 34px;
+	font-size: 20px;
+	color: #666;
+}
+/*立即购买*/
+.buy-now{
+	width:inherit;
+	height: 300px;
+	/*background-color: red;*/
+	/*position: relative;*/
+	box-sizing: border-box;
+	padding: 96.5px 402px;
+	background-image: url(../img/index_bg_buycustom.png);
+	background-size: inherit 300px; 
+}
+.buy-now .buy-opt{
+	width: 545px;
+	height: 107px;
+	/*background-color: gainsboro;*/
+	position: relative;
+}
+.buy-now .buy-opt .buy-opt-text{
+	width: 545px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: lighter;
+	text-align: center;
+	color: #000;
+}
+.buy-now .buy-opt .buy-opt-btn{
+	width: 545px;
+	height: 37px;
+	/*background-color: yellowgreen;*/
+	position: absolute;
+	bottom: 0px;
+}
+.buy-now .buy-opt .buy-opt-btn .btn-white{
+	display: inline-block;
+	width: 144px;
+	height: 35px;
+	line-height: 35px;
+	border:1px solid #2A8AE2;
+	color: #2A8AE2;
+	text-align: center;
+	font-size: 14px;
+	margin-right: 30px;
+	margin-left: 111.5px;
+	font-weight: lighter;
+}
+.buy-now .buy-opt .buy-opt-btn .btn-blue{
+	display: inline-block;
+	width: 144px;
+	height: 35px;
+	line-height: 35px;
+	border:1px solid #2A8AE2;
+	background-color: #2A8AE2;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	/*margin-right: 30px;*/
+	font-weight: lighter;
+}
+.buy-now .buy-opt .buy-opt-btn .btn-white:hover{
+	border:1px solid #54A1E7;
+	color: #54A1E7;
+}
+.buy-now .buy-opt .buy-opt-btn .btn-blue:hover{
+	border:1px solid #54A1E7;
+	background-color: #54A1E7;
+}
+
+/*详细功能页*/
+/*邮箱功能*/
+.mail-function{
+	height: 729px;
+	/*background-color: gainsboro;*/
+}
+.mail-function .function-text{
+	width: inherit;
+	height: 108px;
+	/*background-color: yellowgreen;*/
+	position: relative;
+}
+.mail-function .function-text p{
+	position: absolute;
+	top: 75px;
+	font-size: 24px;
+}
+.mail-function .function-item{
+	width: inherit;
+	height: 621px;
+	/*background-color: palegreen;*/
+}
+.mail-function .function-item li{
+	list-style: none;
+	width:170px;
+	height: 169px;
+	float: left;
+	margin-top: 38px;
+	margin-right: 37.5px;
+	/*background-color: palegoldenrod;*/
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	position: relative;
+	overflow: hidden;
+	-webkit-animation: div 0.3s ease-in-out;
+}
+.mail-function .function-item li:hover{
+	border: 1px solid #2A8AE2;
+	-webkit-animation: div 0.3s ease-in-out;
+}
+@-webkit-keyframes div{
+	0%{
+	   top: -169px;
+	}
+	50%{
+		-moz-animation: -85px;
+	}
+	100%{
+		-moz-animation: 0px;
+	}
+}
+.mail-function .function-item li:nth-child(5n){
+	margin-right: 0px;
+}
+.mail-function .function-item li .pic{
+	width:170px;
+	height:338px ;
+	/*background-color: red;*/
+	position: absolute;
+}
+.mail-function .function-item li .pic:hover{
+	top: -169px;
+	-webkit-animation: div-hover 0.3s ease-out;
+	
+}
+@-webkit-keyframes div-hover{
+	0%{
+	   top: 0px;
+	}
+	50%{
+		-moz-animation: -150px;
+	}
+	100%{
+		-moz-animation: -169px;
+	}
+}
+
+.mail-function .function-item li .title{
+	width: 170px;
+	height: 169px;
+	/*display: none;*/
+}
+.mail-function .function-item li .title .images{
+	width: 48px;
+	height: 44px;
+	background-image: url(../img/mail-function.png);
+	position: absolute;
+	left: 61px;
+	top: 50px;
+}
+.mail-function .function-item li .title .item1{
+	background-position: 0px 0px;
+}
+.mail-function .function-item li .title .item2{
+	background-position: 0px -582px;
+}
+.mail-function .function-item li .title .item3{
+	background-position: 0px -636px;
+}
+.mail-function .function-item li .title .item4{
+	background-position: 0px -161px;
+}
+.mail-function .function-item li .title .item5{
+	background-position: 0px -216px;
+}
+.mail-function .function-item li .title .item6{
+	background-position: 0px -797px;
+}
+.mail-function .function-item li .title .item7{
+	background-position: 0px -851px;
+}
+.mail-function .function-item li .title .item8{
+	background-position: 0px -960px;
+}
+.mail-function .function-item li .title .item9{
+	background-position: 0px -54px;
+}
+.mail-function .function-item li .title .item10{
+	background-position: 0px -108px;
+}
+.mail-function .function-item li .title .item11{
+	background-position: 0px -690px;
+}
+.mail-function .function-item li .title .item12{
+	background-position: 0px -270px;
+}
+.mail-function .function-item li .title .item13{
+	background-position: 0px -324px;
+}
+.mail-function .function-item li .title .item14{
+	background-position: 0px -432px;
+}
+.mail-function .function-item li .title .item15{
+	background-position: 0px -486px;
+}
+
+
+
+
+.mail-function .function-item li .title .f1{
+	font-size: 16px;
+	/*position: absolute;
+	top: 110px;
+	left: 36px;*/
+	padding-top: 110px;
+	text-align: center;
+}
+.mail-function .function-item li .hover-title{
+	width: 170px;
+	height: 169px;
+	/*background-color: blue;*/
+	box-sizing: border-box;
+	padding: 0px 15px;
+}
+.mail-function .function-item li .hover-title .f1{
+	font-size: 16px;
+	text-align: center;
+	padding-top: 44px;
+	padding-bottom: 18px;
+	
+}
+.mail-function .function-item li .hover-title .f2{
+	font-size: 14px;
+	color: #757575;
+	/*text-align: center;*/
+}
+
+/*管理功能*/
+.manage-function{
+	height: 932px;
+	/*background-color: gainsboro;*/
+}
+.manage-function .function-text{
+	width: inherit;
+	height: 104px;
+	/*background-color: yellowgreen;*/
+	position: relative;
+}
+.manage-function .function-text p{
+	position: absolute;
+	top: 75px;
+	font-size: 24px;
+}
+.manage-function .function-item{
+	width: inherit;
+	height: 828px;
+	/*background-color: palegreen;*/
+}
+.manage-function .function-item li{
+	list-style: none;
+	width:170px;
+	height: 169px;
+	float: left;
+	margin-top: 38px;
+	margin-right: 37.5px;
+	/*background-color: palegoldenrod;*/
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	position: relative;
+	overflow: hidden;
+	-webkit-animation: div1 0.3s linear;
+}
+.manage-function .function-item li:hover{
+	border: 1px solid #2A8AE2;
+}
+@-webkit-keyframes div1{
+	0%{
+	   top: -169px;
+	}
+	50%{
+		-moz-animation: -85px;
+	}
+	100%{
+		-moz-animation: 0px;
+	}
+}
+.manage-function .function-item li:nth-child(5n){
+	margin-right: 0px;
+}
+.manage-function .function-item li .pic{
+	width:170px;
+	height:338px ;
+	/*background-color: red;*/
+	position: absolute;
+}
+.manage-function .function-item li .pic:hover{
+	top: -169px;
+	-webkit-animation: div1-hover 0.3s ease-out;
+	
+}
+@-webkit-keyframes div1-hover{
+	0%{
+	   top: 0px;
+	}
+	50%{
+		-moz-animation: -150px;
+	}
+	100%{
+		-moz-animation: -169px;
+	}
+}
+
+.manage-function .function-item li .title{
+	width: 170px;
+	height: 169px;
+	/*display: none;*/
+}
+.manage-function .function-item li .title .images{
+	width: 48px;
+	height: 44px;
+	background-image: url(../img/manage_func.png);
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 61px;
+	top: 50px;
+}
+.manage-function .function-item li .title .item1{
+	background-position: 0px 0px;
+}
+.manage-function .function-item li .title .item2{
+	background-position: 0px -540px;
+}
+.manage-function .function-item li .title .item3{
+	background-position: 0px -592px;
+}
+.manage-function .function-item li .title .item4{
+	background-position: 0px -646px;
+}
+.manage-function .function-item li .title .item5{
+	background-position: 0px -700px;
+}
+.manage-function .function-item li .title .item6{
+	background-position: 0px -754px;
+}
+.manage-function .function-item li .title .item7{
+	background-position: 0px -808px;
+}
+.manage-function .function-item li .title .item8{
+	background-position: 0px -862px;
+}
+.manage-function .function-item li .title .item9{
+	background-position: 0px -916px;
+}
+.manage-function .function-item li .title .item10{
+	background-position: 0px -54px;
+}
+.manage-function .function-item li .title .item11{
+	background-position: 0px -108px;
+}
+.manage-function .function-item li .title .item12{
+	background-position: 0px -162px;
+}
+.manage-function .function-item li .title .item13{
+	background-position: 0px -216px;
+}
+.manage-function .function-item li .title .item14{
+	background-position: 0px -270px;
+}
+.manage-function .function-item li .title .item15{
+	background-position: 0px -324px;
+}
+.manage-function .function-item li .title .item16{
+	background-position: 0px -378px;
+}
+.manage-function .function-item li .title .item17{
+	background-position: 0px -432px;
+}
+.manage-function .function-item li .title .item18{
+	background-position: 0px -486px;
+}
+
+
+
+
+.manage-function .function-item li .title .f1{
+	font-size: 16px;
+	/*position: absolute;
+	top: 110px;
+	left: 36px;*/
+	padding-top: 110px;
+	text-align: center;
+}
+.manage-function .function-item li .hover-title{
+	width: 170px;
+	height: 169px;
+	/*background-color: blue;*/
+	box-sizing: border-box;
+	padding: 0px 15px;
+}
+.manage-function .function-item li .hover-title .f1{
+	font-size: 16px;
+	text-align: center;
+	padding-top: 44px;
+	padding-bottom: 18px;
+	
+}
+.manage-function .function-item li .hover-title .f2{
+	font-size: 14px;
+	color: #757575;
+	/*text-align: center;*/
+}
+.null-div{
+	height: 160px;
+}
+
+/*整合方案页*/
+/*plan*/
+.plan{
+	width: 880px;
+	height: 670px;
+	margin: 58px auto 0px;
+}
+.plan div{
+	width:257px ;
+	height: 260px;
+	margin-bottom: 50px;
+	margin-right: 54.5px;
+	box-sizing: border-box;
+	border: 1px solid #e0e0e0;
+	/*background-color: yellowgreen;*/
+}
+.plan div:hover{
+	border: 1px solid #2C8DE1;
+}
+.plan div:nth-child(3n){
+	margin-right: 0px;
+}
+.plan div span{
+	display: inline-block;
+	width: 188px;
+	height: 80px;
+	background-color: red;
+	margin:50px 34px 0px; 
+	background-image:url(../img/integrate.png) ;
+}
+.plan div span.plan1{
+	background-position: 0px 0px;
+}
+.plan div span.plan2{
+	background-position: 0px -90px;
+}
+.plan div span.plan3{
+	background-position: 0px -180px;
+}
+.plan div span.plan4{
+	background-position: 0px -270px;
+}
+.plan div span.plan5{
+	background-position: 0px -360px;
+}
+.plan div span.plan6{
+	background-position: 0px -450px;
+}
+
+
+
+.plan div .p1{
+	font-size: 18px;
+	font-weight: 200;
+	color: #000;
+	margin-top: 5px;
+	margin-bottom: 12px;
+	text-align: center;
+}
+.plan div .p2{
+	font-size: 14px;
+	color: #757575;
+	margin: 0px 15px;
+	text-align: left;
+	font-weight: 200;
+	line-height: 18px;
+}
+
+/*合作客户页*/
+.cooperate{
+	width: inherit;
+	height: 404px;
+	background-image: url(../img/bgimg.png);
+	background-size: inherit inherit; 
+	/*background-color: darkgray;*/
+}
+.cooperate .main{
+	width: 940px;
+	height: 404px;
+	/*background-color: palegreen;*/
+	margin:0px auto;
+	padding-top: 64px;
+	box-sizing: border-box;
+}
+.cooperate .main .aside-nav{
+	width: 112px;
+	height: 340px;
+	/*background-color: pink;*/
+	/*padding-top: 15px;*/
+	box-sizing: border-box;
+	/*border-right: 1px solid yellow;*/
+}
+.cooperate .main .aside-nav .aside-head{
+	width: inheit;
+	height: 15px;
+	/*background-color: red;*/
+	border-right: 1px solid #e0e0e0;
+}
+.cooperate .main .aside-nav ul{
+	height: 240px;
+	/*background-color: red;*/
+}
+.cooperate .main .aside-nav ul li{
+	list-style: none;
+	width: inherit;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border-right: 1px solid #e0e0e0;
+	box-sizing: border-box;
+}
+.cooperate .main .aside-nav ul li:first-child{
+	/*border: 1px solid #e0e0e0;
+	border-right: 1px solid white;*/
+	background-color: #fdfdfd;
+}
+.cooperate .main .aside-nav ul li a{
+	color: #333;
+	font-size: 16px;
+}
+/*.cooperate .main .aside-nav ul li:hover a{
+	color: #2a8ae2;
+}*/
+.cooperate .main .aside-nav .aside-foot{
+	width: inherit;
+	height: 35px;
+	/*background-color: red;*/
+	border-right: 1px solid #e0e0e0;
+	box-sizing: border-box;
+}
+
+
+.cooperate .extra-info{
+	width: 783px;
+	height: 340px;
+	/*background-color: lightcoral;*/
+}
+.cooperate .extra-info ul{}
+.cooperate .extra-info ul li{
+	list-style: none;
+	width: inherit;
+	height: 340px;
+	display: none;
+}
+.cooperate .extra-info ul li:first-child{
+	display: block;
+}
+.cooperate .extra-info ul li .upper{
+	width: inherit;
+	height: 170px;
+}
+.cooperate .extra-info ul li div.left{
+	width: 170px;
+	height: 170px;
+	/*border: 1px solid red;*/
+	box-sizing: border-box;
+	margin-right: 34px;
+	padding-top: 50px;
+	background-color: rgba(0,0,0,0.03);
+}
+.cooperate .extra-info ul li div.left:last-child{
+	margin-right: 0px;
+}
+.cooperate .extra-info ul li div.left span{
+	display: block;
+	width: inherit;
+	height: 70px;
+	/*background-color: palegreen;*/
+	background-image: url(../img/brand_logos.png);
+	background-repeat: no-repeat;
+}
+.cooperate .extra-info ul li .box1{
+	background-position: 0px -2422px;
+}
+.cooperate .extra-info ul li .box2{
+	background-position: 0px -2494px;
+}
+.cooperate .extra-info ul li .box3{
+	background-position: 0px -2580px;
+}
+.cooperate .extra-info ul li .box4{
+	background-position: 0px -2659px;
+}
+.cooperate .extra-info ul li .box5{
+	background-position: 0px -2739px;
+}
+.cooperate .extra-info ul li .box6{
+	background-position: 0px -80px;
+}
+.cooperate .extra-info ul li .box7{
+	background-position: 0px -160px;
+}
+.cooperate .extra-info ul li .box8{
+	background-position: 0px -240px;
+}
+.cooperate .extra-info ul li .box9{
+	background-position: 0px -2259px;
+}
+.cooperate .extra-info ul li .box10{
+	background-position: 0px -400px;
+}
+.cooperate .extra-info ul li .box11{
+	background-position: 0px -480px;
+}
+.cooperate .extra-info ul li .box12{
+	background-position: 0px -560px;
+}
+.cooperate .extra-info ul li .box13{
+	background-position: 0px -640px;
+}
+.cooperate .extra-info ul li .box14{
+	background-position: 0px -730px;
+}
+.cooperate .extra-info ul li .box15{
+	background-position: 0px -810px;
+}
+.cooperate .extra-info ul li .box16{
+	background-position: 0px -970px;
+}
+.cooperate .extra-info ul li .box17{
+	background-position: 0px 0px;
+}
+.cooperate .extra-info ul li .box18{
+	background-position: 0px -890px;
+}
+.cooperate .extra-info ul li .box19{
+	background-position: 0px -1660px;
+}
+.cooperate .extra-info ul li .box20{
+	background-position: 0px -2339px;
+}
+.cooperate .extra-info ul li .box21{
+	background-position: 0px -1050px;
+}
+.cooperate .extra-info ul li .box22{
+	background-position: 0px -1130px;
+}
+.cooperate .extra-info ul li .box23{
+	background-position: 0px -1210px;
+}
+.cooperate .extra-info ul li .box24{
+	background-position: 0px -1300px;
+}
+/*下方的文字解释说明*/
+.cooperate .extra-info ul li .text{
+	width: inherit;
+	height: 170px;
+	/*background-color: pink;*/
+}
+.cooperate .extra-info ul li .text div{
+	width: inherit;
+	height: 170px;
+	display: none;
+	padding-top: 33px;
+	box-sizing: border-box;
+}
+.cooperate .extra-info ul li .text div:first-child{
+	display: block;
+}
+.cooperate .extra-info ul li .text div .p1{
+	font-size: 24px;
+	color: #000;
+	/*font-weight: bold;*/
+}
+.cooperate .extra-info ul li .text div .p2{
+	color: #000000;
+	margin-top: 17px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.user{
+	width: 940px;
+	height: 380px;
+	margin: 134px auto 0px;
+	/*background-color: gainsboro;*/
+	padding-left: 44px;
+	box-sizing: border-box;
+}
+.user p{
+	font-size: 20px;
+	margin-bottom: 28px;
+	color: #000;
+}
+.user table{
+	width: 896px;
+	height:228px;
+	border-color: #e0e0e0;
+}
+.user table td{
+	width: 224px;
+	height:114px;
+	box-sizing: border-box;
+	padding-left: 37px;
+	padding-top: 10px;
+}
+.user table td span{
+	display: block;
+	/*background-color: red;*/
+	width: 150px;
+	height: 70px;
+	background-image: url(../img/brand_logos.png);
+}
+.user table td span.user1{
+	background-position: 0px -2422px;
+}
+.user table td span.user2{
+	background-position: 0px -480px;
+}
+.user table td span.user3{
+	background-position: 0px -2580px;
+}
+.user table td span.user4{
+	height: 40px;
+	background-position: 0px -1530px;
+}
+.user table td span.user5{
+	height: 77px;
+	background-position: 20px -1570px;
+}
+.user table td span.user6{
+	background-position: 0px -730px;
+}
+.user table td span.user7{
+	background-position: 0px 0px;
+}
+.user table td span.user8{
+	background-position: 0px -888px;
+}

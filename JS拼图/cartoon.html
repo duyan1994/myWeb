@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.game{
+				width: 760px;
+				height: 555px;
+				border: solid 1px red;
+				margin: 10px auto;
+			}
+			.game .demo{
+				height: 120px;
+				width: 150px;
+			}	
+			.game .demo img{
+				width: inherit;
+			}	
+			.game .contatiner{
+				margin-top: 5px;
+				height: 430px;
+				width: 760px;
+				background-color: pink;
+				padding-top: 2px;
+			}
+			.game .item{
+				width: 186px;
+				height: 103px;
+				float: left;
+				background-color: blue;
+				margin:2px;
+				background-image: url(img/cartoon.jpg);
+				background-size: 760px 430px;
+				position: relative;
+			}
+			.item-1{
+				background-position: 0px 0px;
+			}	
+			.item-2{
+				background-position: -186px 0px;
+			}	
+			.item-3{
+				background-position: -372px 0px;
+			}	
+			.item-4{
+				background-position: -558px 0px;
+			}
+			
+			.item-5{
+				background-position: 0px  -103px;
+			}	
+			.item-6{
+				background-position: -186px -103px;
+			}	
+			.item-7{
+				background-position: -372px -103px;
+			}	
+			.item-8{
+				background-position: -558px -103px;
+			}
+			
+			.item-9{
+				background-position: 0px -206px;
+			}	
+			.item-10{
+				background-position: -186px -206px;
+			}	
+			.item-11{
+				background-position: -372px -206px;
+			}	
+			.item-12{
+				background-position: -558px -206px;
+			}
+			
+			.item-13{
+				background-position: 0px  -309px;
+			}	
+			.item-14{
+				background-position: -186px -309px;
+			}	
+			.item-15{
+				background-position: -372px -309px;
+			}	
+			.item-16{
+				background-position: -558px -309px;
+			}
+			.item-0{
+				background-image: none!important;
+				opacity: 0;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="game">
+		    <div class="demo">
+				<img src="img/cartoon.jpg">
+			</div>
+			<div class="contatiner">
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				<div class="item"></div>
+				
+			</div>
+		</div>
+		
+		<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				var itemStatus = [6,15,2,3,10,5,0,13,8,9,4,11,12,7,14,1]; //定义一个数组
+				var items = $(".game .item"); //获取到所有的contatiner的div
+				for(var i = 0 ;i<16;i++){
+					items.eq(i).addClass("item-"+itemStatus[i]); //循环给每个div添加类
+				}
+				
+				// 添加键盘监听，获取山下左右操作
+				$(document).keydown(function(e){
+					var keyCode = e.keyCode;
+					$(":animated").stop(true,true);
+					switch(keyCode){
+						case 37:left();break;
+						case 38:up();break;
+						case 39:right();break;
+						case 40:down();break;
+						default:break;
+					}
+				});
+				//左操作
+				//空格左边的操作
+				function left(){
+					for(var i =0; i<16;i++){
+						if(itemStatus[i] == 0){
+							// i 就是空白的位置
+							if(i%4==3){  //在最右边
+								return;
+							}else{
+								var tmp = i;
+								items.eq(i+1).animate({right:"190px"},200,function(){
+									items.eq(tmp).removeClass("item-0").addClass("item-"+itemStatus[tmp+1]); //移动之后给原来的空格处移除class，并给其添加上图片所在类
+									items.eq(tmp+1).removeClass("item-"+itemStatus[tmp+1]).addClass("item-0").attr("style","");
+									var tmpStatus = itemStatus[tmp+1];
+									itemStatus[tmp+1] = itemStatus[tmp];
+									itemStatus[tmp] = tmpStatus;   //交换数组里的位置
+								});
+							}
+							return;
+						}
+					}
+					
+				}
+				//空格右边的操作
+				function right(){
+					for(var i =0; i<16;i++){
+						if(itemStatus[i] == 0){
+							// i 就是空白的位置
+							if(i%4==0){  //在最左边
+								return;
+							}else{
+								var tmp = i;
+								items.eq(i-1).animate({left:"190px"},200,function(){
+									items.eq(tmp).removeClass("item-0").addClass("item-"+itemStatus[tmp-1]); //移动之后给原来的空格处移除class，并给其添加上图片所在类
+									items.eq(tmp-1).removeClass("item-"+itemStatus[tmp-1]).addClass("item-0").attr("style","");
+									var tmpStatus = itemStatus[tmp-1];
+									itemStatus[tmp-1] = itemStatus[tmp];
+									itemStatus[tmp] = tmpStatus;   //交换数组里的位置
+								});
+							}
+							return;
+						}
+					}
+					
+				}
+				//空格上边的操作
+				function up(){
+					for(var i =0; i<16;i++){
+						if(itemStatus[i] == 0){
+							// i 就是空白的位置
+							if(i>11){  //在最上边
+								return;
+							}else{
+								var tmp = i;
+								items.eq(i+4).animate({bottom:"107px"},200,function(){
+									items.eq(tmp).removeClass("item-0").addClass("item-"+itemStatus[tmp+4]); //移动之后给原来的空格处移除class，并给其添加上图片所在类
+									items.eq(tmp+4).removeClass("item-"+itemStatus[tmp+4]).addClass("item-0").attr("style","");
+									var tmpStatus = itemStatus[tmp+4];
+									itemStatus[tmp+4] = itemStatus[tmp];
+									itemStatus[tmp] = tmpStatus;   //交换数组里的位置
+								});
+							}
+							return;
+						}
+					}
+					
+				}
+				function down(){
+					for(var i =0; i<16;i++){
+						if(itemStatus[i] == 0){
+							// i 就是空白的位置
+							if(i<4){
+								return;
+							}else{
+								var tmp = i;
+								items.eq(i-4).animate({top:"107px"},200,function(){
+									items.eq(tmp).removeClass("item-0").addClass("item-"+itemStatus[tmp-4]);
+									items.eq(tmp-4).removeClass("item-"+itemStatus[tmp-4]).addClass("item-0").attr("style","");
+									var tmpStatus = itemStatus[tmp-4];
+									itemStatus[tmp-4] = itemStatus[tmp];
+									itemStatus[tmp] = tmpStatus;
+								});
+							}
+							return;
+						}
+					}
+				}
+				
+				
+				
+			});
+		</script>
+	</body>
+</html>

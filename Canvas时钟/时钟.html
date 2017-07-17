@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			#canvas {
+				/*border: solid 1px red;*/
+			}
+		</style>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="400" height="400"></canvas>
+		<script type="text/javascript">
+			var canvas = document.getElementById("canvas");
+			var context = canvas.getContext("2d");
+
+			context.translate(200, 200);
+			context.font = "700 15px '微软雅黑'";
+			context.textAlign = "center";
+			context.textBaseline = "middle";
+			function drawClock() {
+				context.beginPath();
+				context.arc(0, 0, 190, 0, Math.PI * 2, true);
+				context.lineWidth = 8;
+				context.stroke();
+				context.beginPath();
+				for(var i = 0; i < 60; i++) {
+					context.beginPath();
+					context.fillStyle = "black";
+					if(i % 5 == 0) {
+						// 将 0~59 的数字转换成   3~12的数字
+						var num = (i/5+3)%12==0?12:(i/5+3)%12;
+						context.fillText(num,Math.cos(Math.PI / 180 * 6 * i) * 175, Math.sin(Math.PI / 180 * 6 * i) * 175);
+					} else {
+						context.arc(Math.cos(Math.PI / 180 * 6 * i) * 175, Math.sin(Math.PI / 180 * 6 * i) * 175, 3, 0, Math.PI * 2, true);
+					}
+					context.fill();
+				}
+				var now = new Date();
+				var h = now.getHours();
+				var m = now.getMinutes();
+				var s = now.getSeconds();
+				
+				// 时钟
+				context.save();
+				context.beginPath();
+				context.rotate(Math.PI / 180 *(30*h+m/2));
+				context.lineTo(0, 20);
+				context.lineTo(0, -90);
+				context.lineWidth = 10;
+				context.lineCap = "round";
+				context.stroke();
+				context.restore();
+				// 分针
+				context.save();
+				context.beginPath();
+				context.rotate(Math.PI / 180 * (6*m+s/10));
+				context.lineTo(0, 30);
+				context.lineTo(0, -110);
+				context.lineWidth = 5;
+				context.lineCap = "round";
+				context.stroke();
+				context.restore();
+				
+				// 秒针
+				context.save();
+				context.beginPath();
+				context.rotate(Math.PI / 180 * 6*s);
+				context.lineTo(0, 40);
+				context.lineTo(0, -150);
+				context.lineWidth = 3;
+				context.strokeStyle = "red";
+				context.lineCap = "round";
+				context.stroke();
+				context.restore();
+				// 中间那个粉色圆行的
+				context.beginPath();
+				context.arc(0, 0, 15, 0, Math.PI * 2);
+				context.fillStyle = "deeppink";
+				context.fill();
+				context.closePath();
+			}
+			drawClock();
+			setInterval(function(){
+				context.clearRect(-200,-200,400,400);
+				drawClock();
+			},1000);
+		</script>
+	</body>
+
+</html>

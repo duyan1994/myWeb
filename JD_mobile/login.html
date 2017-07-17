@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body style="background-color: #FFFFFF;">
+		<header id="header" style="display:block;">
+		    <span class="icon icon-goback"></span>
+		    <span class="txt-header">京东登录</span>
+		</header>
+		<section class="page">
+		    <div class="wrap ">
+		        <div class="input-container">
+		        	<div class="txt-username">帐号</div>
+		            <input id="username" type="text" placeholder="用户名/邮箱/已验证手机" autocomplete="off" >
+		            <i class="icon icon-clear icon1" style="display: none;"></i>
+		        </div>
+		        <div class="input-container">
+		        	<div class="txt-password">密码</div>
+		            <input id="password" type="text" placeholder="请输入密码" autocomplete="off" >
+		            <i class="icon icon-clear icon2" style="display: none;" ></i>
+		            <label class="label-checkbox">
+		                <input id="onOff_pwd" type="checkbox">
+		                <div class="checkbtn">
+		                </div>
+		            </label>
+		        </div>
+		        <!--<div id="input-code" class="input-container" style="display:;">
+		        	<div class="txt-imgverify">验证码</div>
+		            <input id="code" class="acc-input imgverify" type="text" placeholder="请输入验证码" autocomplete="off">
+		            <span class="code-box"></span>
+		            <i class="icon icon-clear"></i>
+		        </div>-->
+		        <div class="notice">&nbsp;</div>
+		        <a href="javascript:;" id="loginBtn" class="btn">登 录</a>
+		        
+			    <div class="quick-nav clearfix">
+					    <a href="javascript:;" class="quickReg" >
+					    	<span class="txt-findpwd">手机快速注册</span>
+					    </a>
+				        <a href="javascript:;" class="findpwd">
+				        	<span class="txt-quickReg">找回密码</span>
+				        </a>
+			    </div>        
+		        <div class="quick-login" style="display:">
+		            <h4 class="txt-otherLogin">其他登录方式</h4>
+		             <div class="notice"></div>
+		            <a href="javascript:;" class="quick-qq">
+		            	<i class="icon icon-qq"></i>
+		            	<br /><br /> 
+		            	<span class="txt-qq">QQ</span>
+		            </a>
+		            <a href="javascript:;" class="quick-wx">
+		            	<i class="icon icon-wx"></i>
+		            	<br /><br />
+		            	<span class="txt-wechat">微信</span>
+		            </a>
+		        </div>
+		    </div>
+		</section>
+		
+		
+		
+	</body>
+	
+	<script type="text/javascript" src="js/jquery-2.1.0.js" ></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//用户名
+			var username =$("#username");
+			var pwd = $("#password");
+			var tips=$(".notice");
+			var loginBtn=$("#loginBtn");
+			
+			//只有当两个输入框均有value值存在btn变红色
+			username.keyup(function(){
+				if(username.val()){
+					
+					pwd.keyup(function(){
+						if(pwd.val()){
+							console.log("2")
+							loginBtn.addClass("btn-active");
+						}
+					})
+				}
+			});
+			
+			pwd.keyup(function(){
+				if(pwd.val()){
+					
+					username.keyup(function(){
+						if(username.val()){
+							console.log("2")
+							loginBtn.addClass("btn-active");
+						}
+					})
+				}
+			});
+			
+			//得到光标
+			username.focus(function(){
+				$("#username+i").css("display","block")
+			});
+			username.blur(function(){
+				$("#username+i").css("display","none")
+				
+			});
+			//密码
+			pwd.focus(function(){
+				$("#password+i").css("display","block")
+			});
+			pwd.blur(function(){
+				$("#password+i").css("display","none")
+			});
+			//按钮
+             //???
+             
+            
+            //格式验证
+            username.change(function(){
+				if(!checkName(this.value)){
+					tips.eq(0).text("请输入6-19正确的用户名")
+				}
+			})
+			pwd.change(function(){
+				if(!checkPwd(this.value)){
+					tips.eq(0).text("密码需包括字母大小写，数字与字符")
+				}
+			})
+			
+			
+			
+			
+			//用户名
+			function checkName(name){
+				/**字母开头、包含字母、数字、_等内容即可  长度在6~20*/
+				var reg = /^[a-zA-Z0-9][\w]{6,19}$/;
+				
+				return reg.test(name);
+			}
+			//密码验证
+			function checkPwd(pwd){
+				// 字母 大小写  数字  字符
+				var reg = /[a-z]/;
+				if(pwd.search(reg)<0)
+					return false;
+				reg = /[A-Z]/;
+				if(pwd.search(reg)<0)
+					return false;
+				reg = /[0-9]/;
+				if(pwd.search(reg)<0)
+					return false;
+				reg = /[^a-zA-Z0-9]/;
+				if(pwd.search(reg)<0)
+					return false;
+				reg = /.{6,20}/;
+				return reg.test(pwd);
+			}
+			
+			
+		});
+		
+		
+	</script>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>深夜食堂</title>
+		<link rel="stylesheet" href="css/jquery.fullpage.css" />
+        <link rel="stylesheet" href="css/food.css" />
+	</head>
+
+	<body>
+		<div id="full-page">
+			<audio id="mp3"  autoplay="autoplay" loop="loop" >
+				<source src="img/bgm.mp3"></source>
+			</audio>
+			<div class="section">
+				<img src="img/FlZSrp-kS8Zb_rzikpWBTTki1jJs.png" class="bg-1" />
+				<img src="img/FlZSrp-kS8Zb_rzikpWBTTki1jJs.png" class="bg-2" />
+				<img src="img/house.png" class="bg-3" />
+				<img src="img/logo.png" class="bg-4" />
+				<img src="img/moon.png" class="bg-5"/>
+				<img src="img/cloud.png" class="bg-6" />
+				<img src="img/barb.jpeg" class="bg-7" />
+				<span class="bg-8">Mid Night</span>
+				<span class="bg-9">Dinner</span>
+				<div class="bg-10">这里带给你的不仅仅是味道</div>
+				<div class="bg-11">更多的是感动</div>
+				<div id="music"></div>
+				
+			</div>
+			<div class="section">
+				<img src="img/meat.png" class="bg-12" />
+				<span class="bg-13">美食与爱&nbsp;&nbsp;|</span>
+				<span class="bg-14">|&nbsp;&nbsp;不可辜负</span>
+				<span class="bg-15">&nbsp;&nbsp;&nbsp;&nbsp;这是一个人的故事，
+					也是一群人的故事，你会从他的故事中看到你的故事，
+					他的故事中也可能有你的故事，可能也会因此发生一段故事。
+				</span>
+				<img src="img/logo.png" class="bg-16"/>
+				
+			</div>
+		</div>
+
+		<script type="text/javascript" src="js/jquery-2.1.0.js"></script>
+		<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				$("#full-page").fullpage({
+					verticalCentered: true, //内容是否居中
+					sectionsColor: ["#fbf0d4", "#fbf0d4"], //背景色
+					anchors: ["p1", "p2", "p3", "p4"], //描点
+					scrollingSpeed: 700, //切换的速度
+					navigation: true, // 导航
+					navigationPosition: "right", //导航的位置
+					navigationTooltips: ["提示文字1", "提示文字2", "提示文字3", "提示文字4"], //导航提示文字
+					continuousVertical: true, // 循环切换，不回弹
+					css3: true,
+
+					//回调函数 
+					// 已经进来的时候
+					afterLoad: function(anchorLink, index) {
+
+					},
+
+					// 开始要离开的时候
+					onLeave: function(index, nextIndex, direction) {
+
+					},
+					// 页面加载完成
+					afterRender: function() {
+						var oMp3=$("#mp3");
+						console.log(oMp3)
+						var musicBtn=$("#music");
+						var omp3D = oMp3[0];
+						console.log(omp3D)
+						var musicBtnD=musicBtn[0];
+						musicBtnD.onclick=function(){
+							if(omp3D.paused==true){
+								
+								omp3D.play();
+								musicBtnD.style.webkitAnimationPlayState = "running";
+								
+							}else{
+								omp3D.pause();
+								musicBtnD.style.webkitAnimationPlayState = "paused";
+                                
+							}
+						};
+					},
+
+				});
+				
+				
+			});
+		</script>
+	</body>
+
+</html>

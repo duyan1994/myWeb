@@ -1,0 +1,244 @@
+html{
+	font-size: calc(100vw/3.2);
+}
+body{
+	font-size: 0.16rem;
+}
+#full-page{
+    width: 3.2rem;
+	/*max-width: 750px;*/
+	margin: 0px auto;
+}
+.section{
+	position: relative;
+}
+.section img{
+	position: absolute;
+}
+.bg-1{
+	width: 2.16rem;
+	height: 3.46rem;
+	top: 0.36rem;
+	right: 0.15rem;
+	-webkit-transform-origin:1.08rem  3.46rem;
+	-webkit-transform: rotate(-45deg);
+	-webkit-transition: all 1s linear;
+	opacity: 0.2;
+}
+.section.active .bg-1{
+	-webkit-transform: rotate(0deg);
+	opacity: 1;
+}
+.bg-2{
+	width: 2.16rem;
+	height: 3.46rem;
+	top: 0.36rem;
+	right: 0.15rem;
+	-webkit-transform-origin:1.08rem  3.46rem;
+	-webkit-transform: rotate(45deg);
+	-webkit-transition: all 1s linear;
+	opacity: 0.2;
+}
+.section.active .bg-2{
+	-webkit-transform: rotate(0deg);
+	opacity: 1;
+}
+.bg-3{
+	width: 1.28rem;
+	height: 1.66rem;
+	top: 3.11rem;
+	right: 1.59rem;
+	-webkit-transition: all 1s linear 2s;
+	opacity: 0;
+}
+.section.active .bg-3{
+	opacity: 1;
+	top: 3.11rem;
+	right: 1.59rem;
+}
+.bg-4{
+	width: 1.43rem;
+	height: 1.55rem;
+	top: -1.7rem;
+	right: 1.66rem;
+	-webkit-transition: all 1s cubic-bezier(0.29,-0.5, 0.3, 1.79) 1s;
+}
+.section.active .bg-4{
+	top: 1.56rem;
+	right: 1.66rem;
+}
+.bg-5{
+	width: 0.9rem;
+	height: 0.91rem;
+	top: 0.17rem;
+	right: 2.1rem;
+	-webkit-transition: all 1s linear 1s;
+	opacity: 0;
+}
+.section.active .bg-5{
+	opacity: 1;
+	top: 0.17rem;
+	right: 2.1rem;
+}
+.bg-6{
+	width: 0.98rem;
+	height: 0.31rem;
+	top: 0.89rem;
+	right: 3.5rem;
+	-webkit-transition: all 0.5s linear 1s;
+}
+.section.active .bg-6{
+	top: 0.89rem;
+	right: 1.9rem;
+}
+.bg-7{
+	width: 0rem;
+	height: 0rem;
+	top: 1.46rem;
+	right: 0.91rem;
+	-webkit-transition: all 0.5s linear 1s;
+}
+.section.active .bg-7{
+	width: 1.25rem;
+	height: 1.68rem;
+	top: 0.62rem;
+	right: 0.29rem;
+}
+.bg-8{
+	position: absolute;
+	display: inline-block;
+	font-size: 0.24rem;
+	color: #000;
+	right: -2rem;
+	top: 2.44rem;
+	-webkit-transition: all 1s cubic-bezier(0.29,-0.5, 0.3, 1.79) 1s;
+}
+.section.active .bg-8{
+	right: 0.29rem;
+	top: 2.44rem;
+}
+.bg-9{
+	position: absolute;
+	display: inline-block;
+	font-size: 0.24rem;
+	color: #000;
+	right: -2rem;
+	top: 2.72rem;
+	-webkit-transition: all 1s cubic-bezier(0.29,-0.5, 0.3, 1.79) 1.2s;
+}
+.section.active .bg-9{
+	right: 0.69rem;
+	top: 2.72rem;
+}
+.bg-10{
+	font-size: 0.12rem;
+	position: absolute;
+	right: 0.198rem;
+	top: 7.5rem;
+}
+.section.active .bg-10{
+	right: 0.198rem;
+	top: 3.9rem;
+	-webkit-transition: all 1s ease-in-out 2s;
+}
+.bg-11{
+	font-size: 0.12rem;
+	position: absolute;
+	right: 0.198rem;
+	top: 7.5rem;
+	-webkit-transition: all 1s ease-in-out 2.2s;
+}
+.section.active .bg-11{
+	right: 0.198rem;
+	top: 4.1rem;
+}
+.bg-12{
+	width: 3.2rem;
+	height: 1.82rem;
+	top: -15rem;
+	-webkit-transition: all 1s ease-in-out;
+}
+.section.active .bg-12{
+	top: 0.13rem;
+}
+.bg-13{
+	font-family:  HYChangYiTiJ;
+	text-rendering: optimizeLegibility;
+	font-size: 0.24rem;
+	position: absolute;
+	left: 3.5rem;
+	top: 2.63rem;
+	color: rgb(145, 111, 68);
+	-webkit-transition: all 1s ease-in-out 1.5s;
+}
+.bg-13 i{
+	font-size: 0.3rem;
+}
+.section.active .bg-13{
+	left: 0.28rem;
+	top: 2.63rem;
+}
+.bg-14{
+	font-family:  HYChangYiTiJ;
+	text-rendering: optimizeLegibility;
+	font-size: 0.24rem;
+	position: absolute;
+	left: -2rem;
+	top: 3.04rem;
+	color: #000000;
+	-webkit-transition: all 1s ease-in-out 1.5s;
+}
+.bg-14 i{
+	font-size: 0.3rem;
+}
+.section.active .bg-14{
+	left: 0.53rem;
+	top: 3.04rem;
+}
+.bg-15{
+	display: inline-block;
+	width: 2.29rem;
+	font-size: 0.14rem;
+	text-rendering: optimizeLegibility;
+	color: #000000;
+	text-align: left;
+	position: absolute;
+	top: 7.5rem;
+	left: 0.48rem;
+	-webkit-transition: all 1s ease-in-out 1.5s;
+	line-height: 1.5em;
+}
+.section.active .bg-15{
+	top: 3.57rem;
+	left: 0.48rem;
+}
+.bg-16{
+	width: 1.43rem;
+	height: 1.55rem;
+	top: -15rem;
+	right: 0.16rem;
+	opacity: 0;
+	-webkit-transition: all 1s cubic-bezier(0.42, 0, 0.56, 1.31) 2s;
+}
+.section.active .bg-16{
+	top: 1.29rem;
+	right: 0.16rem;
+	opacity: 1;
+}
+#music{
+	width: 0.3rem;
+	height: 0.3rem;
+	position: fixed;
+	top: 0.4rem;
+	right: 0.1rem;
+	/*background-color: red;*/
+	border-radius: 50%;
+	background-image: url(../img/bgm-btn.svg);
+	background-size: contain;
+	-webkit-animation: rotaterun 3s linear infinite;
+	/*-webkit-animation-play-state: paused;*/
+}
+@-webkit-keyframes rotaterun{
+	from{-webkit-transform: rotate(0deg);}
+	to{-webkit-transform: rotate(359deg);}
+}
